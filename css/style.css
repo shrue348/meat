@@ -771,19 +771,18 @@ select {
 
 
 /*------Contacts-------*/
+.contacts { margin-bottom: 80px; margin-top: -80px;}
+.contacts_txt { border: 1px solid #C3C2C0; height: 593px; padding: 19px 15px; float: left; width: 41.6667%; box-sizing: border-box; background-color: #fff;}
+.contacts__map { height: 593px; float: left; width: 58.3333%;}
+.contacts .selectbox { margin-bottom: 16px;}
+.contacts hr { background-color: #898989;}
+.contacts_search__header { font-size: 16px; font-family: "RobotoBold";}
 
-.contacts > .col-5 { border: 1px solid #; }
-.contacts__map { height: 593px; }
-
-
-
-
-
-
-
-
-
-
+.contacts_checkbox { display: none;}
+.contacts_checkbox + span { font-size: 14px; color: #c70909; font-family: "RobotoBold"; margin-top: 5px; display: inline-block;}
+.contacts_checkbox + span:before { content: url(../img/radio_off.png); position: relative; margin-right: 5px; bottom: -5px;}
+.contacts_checkbox + span:after { content: url(../img/contacts_checkbox_helper.png); position: relative; right: -20px; bottom: -5px;}
+.contacts_checkbox:checked + span:before { content: url(../img/radio_on.png);}
 
 
 

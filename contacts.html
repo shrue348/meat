@@ -73,44 +73,80 @@
 
 		<div class="main">
 			<div class="wrapper">
-				<div class="contacts row">
-					<div class="col-5">
-						<div class="contacts_txt txt">
-							
+				<div class="contacts clear ">
+					<div class="contacts_txt txt">
+						<div class="row">
+							<div class="col-6">
+								<select name="" id="">
+									<option disabled value="">Выбрать город</option>
+									<option value="">2</option>
+									<option value="">3</option>
+									<option value="">4</option>
+								</select>
+							</div>
+							<div class="col-6">
+								<select name="" id="">
+									<option disabled value="">Выбрать район</option>
+									<option value="">2</option>
+									<option value="">3</option>
+									<option value="">4</option>
+								</select>
+							</div>
+							<div class="col-6">
+								<select name="" id="">
+									<option disabled value="">Выбрать метро</option>
+									<option value="">2</option>
+									<option value="">3</option>
+									<option value="">4</option>
+								</select>
+							</div>
+							<div class="col-6">
+								<label>
+									<input class="contacts_checkbox" type="checkbox">
+									<span>Продукция со скидкой</span>
+								</label>
+							</div>
+						</div>
+						<hr>
+
+						<div class="contacts_search">
+							<div class="contacts_search__header">Найдено 5 магазинов</div>
+							<div class="contacts_search__results">
+								
+							</div>
 						</div>
 					</div>
-					<div class="col-7">
-						<div id="map" class="contacts__map row"> </div>
+					<div id="map" class="contacts__map"> </div>
 
-						<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-						<script>
-							ymaps.ready(function () {
-							    var myMap = new ymaps.Map('map', {
-							            center: [55.751574, 37.573856],
-							            zoom: 9
-							        }, {
-							            searchControlProvider: 'yandex#search'
-							        }),
-							        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-							            hintContent: 'Собственный значок метки',
-							            balloonContent: 'Это красивая метка'
-							        }, {
-							            // Опции.
-							            // Необходимо указать данный тип макета.
-							            iconLayout: 'default#image',
-							            // Своё изображение иконки метки.
-							            iconImageHref: 'images/myIcon.gif',
-							            // Размеры метки.
-							            iconImageSize: [30, 42],
-							            // Смещение левого верхнего угла иконки относительно
-							            // её "ножки" (точки привязки).
-							            iconImageOffset: [-5, -38]
-							        });
+					<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+					<script>
+						ymaps.ready(function () {
+						    var myMap = new ymaps.Map('map', {
+						            center: [55.751574, 37.573856],
+						            zoom: 9
+						        }, {
+						            searchControlProvider: 'yandex#search'
+						        }),
+						        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+						            hintContent: 'Собственный значок метки',
+						            balloonContent: 'Это красивая метка'
+						        }, {
+						            // Опции.
+						            // Необходимо указать данный тип макета.
+						            iconLayout: 'default#image',
+						            // Своё изображение иконки метки.
+						            //iconImageHref: 'images/myIcon.gif',
+						            // Размеры метки.
+						            iconImageSize: [30, 42],
+						            // Смещение левого верхнего угла иконки относительно
+						            // её "ножки" (точки привязки).
+						            iconImageOffset: [-5, -38]
+						        });
 
-							    myMap.geoObjects.add(myPlacemark);
-							});
-						</script>
-					</div>
+						    myMap.geoObjects.add(myPlacemark);
+						});
+					</script>
+				
 				</div>
 			</div>
 		</div>

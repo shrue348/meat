@@ -26,6 +26,9 @@
 	.articles__list > .col-3 { width: 33.333%;}
 	.articles__list > .col-3:nth-child(n+4) { display: none !important;}
 	.card.new .card_gal__wrap:after { content: ''; }
+
+	.contacts .col-6 { width: 100%;}
+	.contacts_checkbox + span { margin-top: 0; margin-bottom: 19px;}
 	
 }
  
@@ -68,9 +71,7 @@
 	.about_list__item:nth-child(2n)  { flex-direction: column;}
 
 	.articles.articles__list { column-count: 2;}
-
 	.article__text { column-count: 1;}
-
 	.articles__list > .col-3 { width: 50%;}
 	.add_block .articles__list > .col-3:nth-child(n+3) { display: none !important;}
 
@@ -90,8 +91,10 @@
 	.card_props__bottom { text-align: center;}
 	.card_props__bottom_min { display: inline-block; float: none; margin: 0 10px 10px; }
 
-
 	.add_block .catalog__list > .col-4:nth-child(n+3) { display: none !important;}
+
+	.contacts_txt { width: 100%; height: 593px;}
+	.contacts__map { width: 100%; height: 683px;}
 	
 }
  
