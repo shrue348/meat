@@ -18,6 +18,24 @@
 	<script src="js/ready.js"></script>
 </head>
 <body>
+	<div class="mob_menu__overlay"></div>
+	<div class="mob_menu__wrap">
+		<div class="mob_menu__soc_icons soc_icons">
+			<a href="/" class="soc_icons__item"><img src="img/icon_vk.png" alt="Vkontakte"></a>
+			<a href="/" class="soc_icons__item"><img src="img/icon_fb.png" alt="FaceBook"></a>
+			<a href="/" class="soc_icons__item"><img src="img/icon_insta.png" alt="Instagram"></a>
+			<a href="/" class="soc_icons__item"><img src="img/icon_ok.png" alt="Odnoklassniki"></a>
+		</div>
+		<ul class="mob_menu">
+			<li class="mob_menu__item"><a href="about.html" class="mob_menu__link">О бренде</a></li>
+			<li class="mob_menu__item"><a href="articles.html" class="mob_menu__link active">Статьи</a></li>
+			<li class="mob_menu__item"><a href="catalog.html" class="mob_menu__link">Каталог</a></li>
+			<li class="mob_menu__item"><a href="actions.html" class="mob_menu__link">Акции</a></li>
+			<li class="mob_menu__item"><a href="contacts.html" class="mob_menu__link">Где купить</a></li>
+			<li class="mob_menu__item"><a href="samson.html" class="mob_menu__link">Самсон</a></li>
+		</ul>
+	</div>
+
 	<div class="main_wrap">
 		<div class="header">
 			<svg id="svg-header_clip" class="h-svg">
@@ -25,6 +43,7 @@
 			</svg>
 			
 			<div class="wrapper">
+				<a href="javascript:;" class="mob_menu__switch"><i class="icon-menu"></i></a>
 				<div class="header__logo">
 					<a href="/"><img src="img/logo.png" alt="Самсон"></a>
 				</div>
@@ -39,18 +58,12 @@
 				<div class="header__nav">
 					<ul class="header__menu main_menu clear">
 						<li class="main_menu__item"><a href="about.html" class="main_menu__link">О бренде</a></li>
-						<li class="main_menu__item"><a href="articles.html" class="main_menu__link">Статьи</a></li>
+						<li class="main_menu__item"><a href="articles.html" class="main_menu__link active">Статьи</a></li>
 						<li class="main_menu__item"><a href="catalog.html" class="main_menu__link">Каталог</a></li>
 						<li class="main_menu__item"><a href="actions.html" class="main_menu__link">Акции</a></li>
 						<li class="main_menu__item"><a href="contacts.html" class="main_menu__link">Где купить</a></li>
 						<li class="main_menu__item"><a href="samson.html" class="main_menu__link">Самсон</a></li>
 					</ul>
-					<div class="breadcrumbs">
-						<a class="breadcrumbs__link" href="/">Главная <i class="icon-angle-right"></i></a>
-						<a class="breadcrumbs__link" href="stati.html">Статьи <i class="icon-angle-right"></i></a>
-						<a class="breadcrumbs__link" href="stati.html">Шашлык <i class="icon-angle-right"></i></a>
-						<span class="breadcrumbs__current">Название статьи</span>
-					</div>
 				</div>
 
 				<h1>Когда нужно готовить блюда на гриле с закрытой крышкой</h1>
@@ -74,7 +87,7 @@
 						<div class="articles_item__desc">
 							<div class="articles_item__title">Пример статьи с картинкой, заголовком и превью текстом</div>
 							<div class="articles_item__txt">Шоколад разломать на кусочки и вместе со сливочным маслом растопить на водяной бане, не переставая все время.</div>
-							<a href="" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
+							<a href="article.html" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
 						</div>
 					</div>
 
@@ -82,14 +95,14 @@
 						<div class="articles_item__desc">
 							<div class="articles_item__title">Пример статьи с картинкой, заголовком и превью текстом</div>
 							<div class="articles_item__txt">Шоколад разломать на кусочки и вместе со сливочным маслом растопить на водяной бане, не переставая все время.</div>
-							<a href="" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
+							<a href="article.html" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
 						</div>
 					</div>
 
 					<div class="articles_item border_block">
 						<div class="articles_item__desc">
 							<div class="articles_item__title">Пример статьи с картинкой, заголовком и превью текстом</div>
-							<a href="" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
+							<a href="article.html" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
 						</div>
 					</div>
 
@@ -98,7 +111,7 @@
 						<div class="articles_item__desc">
 							<div class="articles_item__title">Пример статьи с картинкой, заголовком и превью текстом</div>
 							<div class="articles_item__txt">Шоколад разломать на кусочки и вместе со сливочным маслом растопить на водяной бане, не переставая все время.</div>
-							<a href="" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
+							<a href="article.html" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
 						</div>
 					</div>
 
@@ -107,7 +120,7 @@
 						<div class="articles_item__desc">
 							<div class="articles_item__title top_title "><span>Пример статьи с картинкой, заголовком и превью текстом</span></div>
 							<div class="articles_item__txt">Шоколад разломать на кусочки и вместе со сливочным маслом растопить на водяной бане, не переставая все время.</div>
-							<a href="" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
+							<a href="article.html" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
 						</div>
 					</div>
 
@@ -116,7 +129,7 @@
 						<div class="articles_item__desc">
 							<div class="articles_item__title">Пример статьи с картинкой, заголовком и превью текстом</div>
 							<div class="articles_item__txt">Шоколад разломать на кусочки и вместе со сливочным маслом растопить на водяной бане, не переставая все время.</div>
-							<a href="" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
+							<a href="article.html" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
 						</div>
 					</div>
 
@@ -124,7 +137,7 @@
 						<div class="articles_item__desc">
 							<div class="articles_item__title">Пример статьи с картинкой, заголовком и превью текстом</div>
 							<div class="articles_item__txt">Шоколад разломать на кусочки и вместе со сливочным маслом растопить на водяной бане, не переставая все время.</div>
-							<a href="" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
+							<a href="article.html" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
 						</div>
 					</div>
 
@@ -132,7 +145,7 @@
 						<div class="articles_item__desc">
 							<div class="articles_item__title">Пример статьи с картинкой, заголовком и превью текстом</div>
 							<div class="articles_item__txt">Шоколад разломать на кусочки и вместе со сливочным маслом растопить на водяной бане, не переставая все время.</div>
-							<a href="" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
+							<a href="article.html" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
 						</div>
 					</div>
 
@@ -141,7 +154,7 @@
 						<div class="articles_item__desc">
 							<div class="articles_item__title">Пример статьи с картинкой, заголовком и превью текстом</div>
 							<div class="articles_item__txt">Шоколад разломать на кусочки и вместе со сливочным маслом растопить на водяной бане, не переставая все время.</div>
-							<a href="" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
+							<a href="article.html" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
 						</div>
 					</div>
 
@@ -150,7 +163,7 @@
 						<div class="articles_item__desc">
 							<div class="articles_item__title top_title"><span>Пример статьи с картинкой, заголовком и превью текстом</span></div>
 							<div class="articles_item__txt">Шоколад разломать на кусочки и вместе со сливочным маслом растопить на водяной бане, не переставая все время.</div>
-							<a href="" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
+							<a href="article.html" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
 						</div>
 					</div>
 
@@ -159,7 +172,7 @@
 						<div class="articles_item__desc">
 							<div class="articles_item__title">Пример статьи с картинкой, заголовком и превью текстом</div>
 							<div class="articles_item__txt">Шоколад разломать на кусочки и вместе со сливочным маслом растопить на водяной бане, не переставая все время.</div>
-							<a href="" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
+							<a href="article.html" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
 						</div>
 					</div>
 
@@ -167,7 +180,7 @@
 						<div class="articles_item__desc">
 							<div class="articles_item__title">Пример статьи с картинкой, заголовком и превью текстом</div>
 							<div class="articles_item__txt">Шоколад разломать на кусочки и вместе со сливочным маслом растопить на водяной бане, не переставая все время.</div>
-							<a href="" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
+							<a href="article.html" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
 						</div>
 					</div>
 
@@ -176,7 +189,7 @@
 						<div class="articles_item__desc">
 							<div class="articles_item__title">Пример статьи с картинкой, заголовком и превью текстом</div>
 							<div class="articles_item__txt">Шоколад разломать на кусочки и вместе со сливочным маслом растопить на водяной бане, не переставая все время.</div>
-							<a href="" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
+							<a href="article.html" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
 						</div>
 					</div>
 
@@ -185,7 +198,7 @@
 						<div class="articles_item__desc">
 							<div class="articles_item__title top_title"><span>Пример статьи с картинкой, заголовком и превью текстом</span></div>
 							<div class="articles_item__txt">Шоколад разломать на кусочки и вместе со сливочным маслом растопить на водяной бане, не переставая все время.</div>
-							<a href="" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
+							<a href="article.html" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
 						</div>
 					</div>
 
@@ -193,7 +206,7 @@
 						<div class="articles_item__desc">
 							<div class="articles_item__title">Пример статьи с картинкой, заголовком и превью текстом</div>
 							<div class="articles_item__txt">Шоколад разломать на кусочки и вместе со сливочным маслом растопить на водяной бане, не переставая все время.</div>
-							<a href="" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
+							<a href="article.html" class="articles_item__link">Подробнее <i class="icon-angle-right"></i></a>
 						</div>
 					</div>
 				</div>
